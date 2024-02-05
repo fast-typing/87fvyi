@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  height: 100vh;
+  background-color: plum;
+}
+
+a {
+  color: #222;
+}
+
+hr {
+  margin: 0 6px;
+}
+
+i {
+  font-size: 18px;
+}
+
+.content {
+  background-color: white;
+  border-radius: 8px;
+  width: 960px;
+  height: 580px;
+  max-width: 85%;
+}
+
+.menu {
+  text-align: center;
+  border-radius: 9999px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &:hover .menu-content {
+    transition: max-height 1s;
+    max-height: 600px;
+  }
+}
+
+.menu-icon {
+  margin: 24px;
+}
+
+.menu-content {
+  list-style-type: none;
+  overflow: hidden;
+  max-height: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  transition: max-height 0.6s;
+
+  & li {
+    transition: background 0.3s;
+    cursor: pointer;
+    padding: 0 6px;
+    margin: 8px 0;
+    font-weight: 600;
+    transition: 0.4s;
+    font-size: 10px;
+  }
+
+  & li:hover {
+    background: linear-gradient(90deg, rgba(71, 90, 198, 1) 0%, rgba(122, 89, 193, 1) 50%, rgba(186, 88, 191, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  & li:last-child {
+    margin-bottom: 24px;
+  }
+}
+
+/* @media (max-width: 960px) {
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .menu, .menu-content {
+    flex-direction: row;
+  }
+} */
