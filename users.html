@@ -2,53 +2,146 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
 
 </head>
 
 <body>
-  <form class="edit">
-    <label>Добавить нового пользователя
-    </label>
-    <input type="text">
-    <button>Добавить</button>
-  </form>
-  <table class="rwd-table">
-    <tr>
-      <th>Имя</th>
-      <th>Почта</th>
-      <th>Удалить доступ</th>
-    </tr>
-    <tr>
-      <td data-th="Movie Title">Star Wars</td>
-      <td data-th="Genre">Adventure, Sci-fi</td>
-      <td data-th="Year">
-        <i class='bx bx-folder-minus'></i>
-      </td>
-    </tr>
-    <tr>
-      <td data-th="Movie Title">Howard The Duck</td>
-      <td data-th="Genre">"Comedy"</td>
-      <td data-th="Year">
-        <i class='bx bx-folder-minus'></i>
+	<main>
+		<div class="content"
+			style="flex-direction: column; align-items: flex-start; gap: 32px; justify-content: start;">
+			<h1>Пользователи</h1>
+			<form class="edit">
+				<h4>Добавить пользователя</h4>
+				<div>
+					<input type="email" placeholder="email">
+					<button>Добавить</button>
+				</div>
+			</form>
+			<div class="table-container">
+				<table class="rwd-table">
+					<thead>
+						<tr>
+							<th>Имя</th>
+							<th>Почта</th>
+							<th>Удалить доступ</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Star Wars</td>
+							<td>Adventure, Sci-fi</td=>
+							<td>
+								<i class='bx bx-folder-minus'></i>
+							</td>
+						</tr>
+						<tr>
+							<td>Howard The Duck</td>
+							<td>"Comedy"</td>
+							<td>
+								<i class='bx bx-folder-minus'></i>
+							</td>
+						</tr>
+						<tr>
+							<td>American Graffiti</td>
+							<td>Comedy, Drama</td>
+							<td>
+								<i class='bx bx-folder-minus'></i>
+							</td>
+						</tr>
+						<tr>
+							<td>American Graffiti</td>
+							<td>Comedy, Drama</td>
+							<td>
+								<i class='bx bx-folder-minus'></i>
+							</td>
+						</tr>
+						<tr>
+							<td>American Graffiti</td>
+							<td>Comedy, Drama</td>
+							<td>
+								<i class='bx bx-folder-minus'></i>
+							</td>
+						</tr>
+						<tr>
+							<td>American Graffiti</td>
+							<td>Comedy, Drama</td>
+							<td>
+								<i class='bx bx-folder-minus'></i>
+							</td>
+						</tr>
+						<tr>
+							<td>American Graffiti</td>
+							<td>Comedy, Drama</td>
+							<td>
+								<i class='bx bx-folder-minus'></i>
+							</td>
+						</tr>
+						<tr>
+							<td>American Graffiti</td>
+							<td>Comedy, Drama</td>
+							<td>
+								<i class='bx bx-folder-minus'></i>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- </div> -->
+		</div>
+		<div class="menu">
+			<div class="menu-icon">
+				<i class="fa-solid fa-bars"></i>
+			</div>
 
-      </td>
-    </tr>
-    <tr>
-      <td data-th="Movie Title">American Graffiti</td>
-      <td data-th="Genre">Comedy, Drama</td>
-      <td data-th="Year">
-        <i class='bx bx-folder-minus'></i>
+			<ul class="menu-content">
+				<li>
+					<a href="index.html">
+						<i class="fa-solid fa-arrow-right-to-bracket"></i>
+						<p>sign in</p>
+					</a>
+				</li>
+				<hr />
+				<li>
+					<a href="sign-up.html">
+						<i class="fa-solid fa-arrow-right-to-bracket"></i>
+						<p>sign up</p>
+					</a>
+				</li>
+				<hr />
 
-      </td>
-    </tr>
-  </table>
+				<li>
+					<a href="files.html">
+						<i class="fa-solid fa-house"></i>
+						<p>home</p>
+					</a>
+				</li>
+				<hr />
 
+				<li>
+					<a href="upload.html">
+						<i class="fa-solid fa-cloud-arrow-up"></i>
+						<p>upload</p>
+					</a>
+				</li>
+				<hr />
+
+				<li>
+					<a href="user-files.html">
+						<i class="fa-solid fa-cloud"></i>
+						<p>access</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</main>
+	
 </body>
 
 </html>
