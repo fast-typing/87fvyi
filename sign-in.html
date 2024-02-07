@@ -1,75 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Вход</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
-  </head>
-  <body>
-    <main>
-      <div class="content">
-        <img src="assets/img.webp" alt="красивая картинка :)" />
-        <form>
-          <h1>Вход</h1>
-          <div class="icon-input">
-            <i class="bx bx-envelope"></i>
-            <input name="email" type="email" placeholder="Почта" />
-          </div>
-          <div class="icon-input">
-            <i class="bx bx-lock-alt"></i>
-            <input name="password" type="password" placeholder="Пароль" />
-          </div>
-          <button style="margin-top: 16px">Войти</button>
-        </form>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вход</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="content">
+    <img src="assets/img.webp" alt="красивая картинка :)" />
+    <form>
+      <h1>Вход</h1>
+      <div class="icon-input">
+        <i class="bx bx-envelope"></i>
+        <input name="email" type="email" placeholder="Почта" />
       </div>
-      <div class="menu">
-        <div class="menu-icon">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-
-        <ul class="menu-content">
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-arrow-right-to-bracket"></i>
-              <p>sign in</p>
-            </a>
-          </li>
-          <hr />
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-arrow-right-to-bracket"></i>
-              <p>sign up</p>
-            </a>
-          </li>
-          <hr />
-
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-house"></i>
-              <p>home</p>
-            </a>
-          </li>
-          <hr />
-
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-cloud-arrow-up"></i>
-              <p>upload</p>
-            </a>
-          </li>
-          <hr />
-
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-cloud"></i>
-              <p>access</p>
-            </a>
-          </li>
-        </ul>
+      <div class="icon-input">
+        <i class="bx bx-lock-alt"></i>
+        <input name="password" type="password" placeholder="Пароль" />
       </div>
-    </main>
-  </body>
+      <button style="margin-top: 16px">Войти</button>
+    </form>
+  </div>
+  <div class="menu">
+    <div class="menu-icon">
+      <i class='bx bx-menu'></i>
+    </div>
+
+    <ul class="menu-content">
+      <li>
+        <a href="files.html">
+          <i class='bx bx-home-alt-2'></i>
+          <p>home</p>
+        </a>
+      </li>
+      <hr />
+      <li>
+        <a href="user-files.html">
+          <i class='bx bx-cloud'></i>
+          <p>access</p>
+        </a>
+      </li>
+      <hr />
+      <li>
+        <a href="upload.html">
+          <i class='bx bx-cloud-upload'></i>
+          <p>upload</p>
+        </a>
+      </li>
+      <hr />
+      <li>
+        <a href="sign-in.html">
+          <i class='bx bx-log-in'></i>
+          <p>sign in</p>
+        </a>
+      </li>
+      <hr />
+      <li>
+        <a href="sign-up.html">
+          <i class='bx bx-log-in'></i>
+          <p>sign up</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+
 </html>
