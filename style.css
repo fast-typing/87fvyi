@@ -18,14 +18,36 @@ body {
   background: linear-gradient(45deg, rgba(71, 90, 198, 1) 0%, rgba(122, 89, 193, 1) 50%, rgba(186, 88, 191, 1) 100%);
 }
 
-div.simple-content {
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  gap: 32px;
+form {
+  display: grid;
+  gap: 16px;
+  text-align: center;
+}
 
-  & .table-container {
-    max-height: 630px
+input {
+  outline: none;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  border-radius: 99999px;
+  height: 48px;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 18px;
+}
+
+button {
+  /* background: linear-gradient(315deg, rgba(71, 90, 199, 1) 0%, rgba(117, 89, 195, 1) 50%, rgba(186, 88, 190, 1) 100%); */
+  background-color: #30a14e;
+  color: white;
+  height: 48px;
+  padding: 0 18px;
+  border-radius: 99999px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #2f7843;
   }
 }
 
@@ -39,6 +61,40 @@ hr {
 
 i {
   font-size: 18px;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+}
+
+button.icon-button {
+  border: 1px solid #e5e7eb;
+  color: black;
+  height: fit-content;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background-color: #f9fafb;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f2f3f4;
+  }
+}
+
+div.simple-content {
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 32px;
+
+  & .table-container {
+    max-height: 630px
+  }
 }
 
 .content {
@@ -94,6 +150,7 @@ i {
     font-weight: 600;
     transition: 0.4s;
     font-size: 10px;
+    max-width: 50px;
   }
 
   & li:hover {
@@ -105,35 +162,6 @@ i {
   & li:last-child {
     margin-bottom: 24px;
   }
-}
-
-form {
-  display: grid;
-  gap: 16px;
-  text-align: center;
-}
-
-input {
-  outline: none;
-  border: 1px solid #e5e7eb;
-  background-color: #f9fafb;
-  border-radius: 99999px;
-  height: 48px;
-  color: #666;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 0 18px;
-}
-
-button {
-  /* background: linear-gradient(315deg, rgba(71, 90, 199, 1) 0%, rgba(117, 89, 195, 1) 50%, rgba(186, 88, 190, 1) 100%); */
-  background-color: #30a14e;
-  color: white;
-  height: 48px;
-  padding: 0 18px;
-  border-radius: 99999px;
-  border: none;
-  cursor: pointer;
 }
 
 .icon-input {
@@ -175,19 +203,15 @@ button {
   }
 }
 
-h4 {
-  font-weight: 600;
+.buttons {
+  display: flex;
+  gap: 8px;
 }
 
 .rwd-table {
   width: 100%;
   border-collapse: collapse;
   position: relative;
-}
-
-thead {
-  position: sticky;
-  top: 0;
 }
 
 .table-container {
