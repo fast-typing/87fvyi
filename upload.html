@@ -1,63 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Загрузка</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <div class="content" style="flex-direction: column">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Загрузка</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="content" style="align-items: start; justify-content: space-between; gap: 32px; ">
+    <div class="upload-container">
       <h1>Загрузка файлов</h1>
       <div class="upload">
         <i class="bx bx-cloud-upload"></i>
-        <span>Переместите сюда нужный файл</span>
+        <span style="text-wrap: balance; text-align: center;">Переместите сюда нужные файлы</span>
       </div>
     </div>
-    <div class="menu">
-      <div class="menu-icon">
-        <i class="bx bx-menu"></i>
-      </div>
+    <div class="table-container">
+      <table class="rwd-table">
+        <thead>
+          <tr>
+            <th>Название</th>
+            <th>Загружен</th>
+            <th>Действия</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-th="Movie Title">Star Wars</td>
+            <td data-th="Genre">
+              <i class='success bx bx-check'></i>
+            </td>
+            <td data-th="Year">
+              <button class="icon-button">
+                <i class="bx bx-download"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td data-th="Movie Title">Star Wars</td>
+            <td data-th="Genre">
+              <i class='bx bx-x'></i>
+            </td>
+            <td data-th="Year">
+              <button class="icon-button">
+                <i class="bx bx-download"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-      <ul class="menu-content">
-        <li>
-          <a href="files.html">
-            <i class="bx bx-home-alt-2"></i>
-            <p>available files</p>
-          </a>
-        </li>
-        <hr />
-        <li>
-          <a href="user-files.html">
-            <i class="bx bx-cloud"></i>
-            <p>files list</p>
-          </a>
-        </li>
-        <hr />
-        <li>
-          <a href="upload.html">
-            <i class="bx bx-cloud-upload"></i>
-            <p>upload</p>
-          </a>
-        </li>
-        <hr />
-        <li>
-          <a href="sign-in.html">
-            <i class="bx bx-log-in"></i>
-            <p>sign in</p>
-          </a>
-        </li>
-        <hr />
-        <li>
-          <a href="sign-up.html">
-            <i class="bx bx-log-in"></i>
-            <p>sign up</p>
-          </a>
-        </li>
-      </ul>
     </div>
-  </body>
+  </div>
+  <div class="menu">
+    <div class="menu-icon">
+      <i class="bx bx-menu"></i>
+    </div>
+
+    <ul class="menu-content">
+      <li>
+        <a href="files.html">
+          <i class="bx bx-home-alt-2"></i>
+          <p>available files</p>
+        </a>
+      </li>
+      <hr />
+      <li>
+        <a href="user-files.html">
+          <i class="bx bx-cloud"></i>
+          <p>files list</p>
+        </a>
+      </li>
+      <hr />
+      <li>
+        <a href="upload.html">
+          <i class="bx bx-cloud-upload"></i>
+          <p>upload</p>
+        </a>
+      </li>
+      <hr />
+      <li>
+        <a href="sign-in.html">
+          <i class="bx bx-log-in"></i>
+          <p>sign in</p>
+        </a>
+      </li>
+      <hr />
+      <li>
+        <a href="sign-up.html">
+          <i class="bx bx-log-in"></i>
+          <p>sign up</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+
 </html>
